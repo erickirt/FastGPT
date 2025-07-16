@@ -500,7 +500,8 @@ MinIO: 用于存储插件的文件数据
 PostgreSQL/Milvus/Oceanbase：存储向量数据
 AIProxy: 聚合各类 AI API，支持多模型调用
 推荐配置 linkPgVector版本 link非常轻量，适合知识库索引量在 5000 万以下。
-环境 最低配置（单节点） 推荐配置 测试（可以把计算进程设置少一些） 2c4g 2c8g 100w 组向量 4c8g 50GB 4c16g 50GB 500w 组向量 8c32g 200GB 16c64g 200GB Milvus版本 link对于亿级以上向量性能更优秀。
+环境 最低配置（单节点） 推荐配置 测试（可以把计算进程设置少一些） 2c4g 2c8g 100w 组向量 4c8g 50GB 4c16g 50GB 500w 组向量 8c32g 200GB 16c64g 200GB Oceanbase版本 link支持最大 16,000 维的 float 稠密向量数据存储。
+环境 最低配置（单节点） 推荐配置 测试 2c6g 2c8g 100w 组向量 未测试 500w 组向量 Milvus版本 link对于亿级以上向量性能更优秀。
 点击查看 Milvus 官方推荐配置
 环境 最低配置（单节点） 推荐配置 测试 2c8g 4c16g 100w 组向量 未测试 500w 组向量 zilliz cloud版本 linkZilliz Cloud 由 Milvus 原厂打造，是全托管的 SaaS 向量数据库服务，性能优于 Milvus 并提供 SLA，点击使用 Zilliz Cloud。</description></item><item><title>SSO &amp; 外部成员同步</title><link>https://doc.fastgpt.io/docs/guide/admin/sso/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://doc.fastgpt.io/docs/guide/admin/sso/</guid><description>如果你不需要用到 SSO/成员同步功能，或者是只需要用 Github、google、microsoft、公众号的快速登录，可以跳过本章节。本章适合需要接入自己的成员系统或主流 办公IM 的用户。
 介绍 link为了方便地接入外部成员系统，FastGPT 提供一套接入外部系统的标准接口，以及一个 FastGPT-SSO-Service 镜像作为适配器。
